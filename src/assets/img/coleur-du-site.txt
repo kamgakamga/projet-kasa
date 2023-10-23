@@ -1,0 +1,5 @@
+=================== COULEURS DE L'APPLICATION KASA =================
+
+couleur principal = #FF6060
+couleur secondaire= #F6F6F6
+couleur tertiaire = #FFFFFF

@@ -1,0 +1,39 @@
+ .header{
+  margin: 40px,100px,0;
+  height: 68px;
+} 
+.header-container{
+  padding: 10px;
+  display: flex;
+  color: #FF6060;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-logo{
+  height: 50px;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 22%;
+}
+
+.menu__item{
+  color: #FF6060;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 34.224px */
+  text-decoration-line: none;
+}
+
+.underline{
+       text-decoration-line: underline;
+}

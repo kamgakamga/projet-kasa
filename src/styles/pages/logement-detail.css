@@ -1,0 +1,56 @@
+.logement-details{
+        display: flex;
+        justify-content: space-between;
+        /* background-color: blue; */
+        width: 100%;
+}
+
+.avatar__tag__section{
+        display: flex;
+        /* background-color: rgb(238, 255, 0); */
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.avatar-section{
+        /* background-color: blueviolet; */
+        width: 50%;
+}
+
+/* 
+.tag-section{
+       /* margin-bottom: -50px ; 
+   
+} */
+
+.tag-blog{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-content: space-between; */
+        /* background-color: blueviolet;  */
+        height: 100px;  
+}
+
+.text__name{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}
+
+.text__localisation{
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; /* 25.668px */
+}
+
+.description{
+        width: 47%;
+}

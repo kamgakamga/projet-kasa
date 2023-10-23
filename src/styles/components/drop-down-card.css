@@ -1,0 +1,33 @@
+.dropdown{
+   margin: 20px 0;
+   background-color: #F5F5F5;
+   border-radius: 10px;
+}
+
+.dropdown-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FF6060;
+        font-size: 25px;
+        color: #FFFFFF;
+        padding: 5px 5px 5px 5px;
+        border-radius: 10px;
+     
+}
+
+.dropdown-content{
+       
+        padding: 5px 0 5px 5px;
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 142.6%; /* 34.224px */
+}
+
+.collapse{
+        transform: rotateY(30);
+           cursor: pointer;
+}

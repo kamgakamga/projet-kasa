@@ -1,0 +1,17 @@
+.tag{
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; 
+        border-radius: 10px;
+        background: #FF6060;
+        padding: 0 10px;
+        margin: 0 5px;
+}
+
+.tag-section{
+        display: flex;
+}
