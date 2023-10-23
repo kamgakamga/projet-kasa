@@ -1,15 +1,17 @@
 import React, { FunctionComponent } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import '../styles/pages/page-not-found.css'
+
 
 const PageNotFound: FunctionComponent = () => {
 
   return (
     <div className="">
-      <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png" alt="Page non trouvée"/>
-      <h1>Oups! La page que vous demandez n'existe pas.</h1> 
-      <Link to="/" className="">
-      Retourner sur la page d’accueil
-      </Link>
+       <p className='error-code'>404</p>
+       <h3  className='page'>Oups! La page que vous demandez n'existe pas.</h3> 
+       <NavLink to="/">
+              <p className="retour-accueil"  style={{ textDecoration: "none" }} >Retourner sur la page d’accueil</p> 
+       </NavLink>
     </div>
   );
 }

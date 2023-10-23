@@ -618,4 +618,6 @@ export const LOGEMENTS: Logement[] =[
             "Rivoli"
           ]
         }
-      ]
+];
+
+export default LOGEMENTS;

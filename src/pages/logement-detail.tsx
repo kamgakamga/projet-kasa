@@ -7,6 +7,7 @@ import DropdownCard from '../components/drop-down-card';
 import Avatar from '../components/avatar';
 import Gallery from '../components/gallery';
 import Tag from '../components/tag';
+import LogementService from "../services/logement-service";
 import Equipement from '../components/equipement';
 
 
@@ -20,12 +21,17 @@ const LogementDetail:FunctionComponent<RouteComponentProps<Params>> =  ({match})
 /************declaration des etats************/
  const [logement, setLogement] = useState<Logement|null>(null);
          
+        // useEffect(() => { 
+        //         LOGEMENTS.forEach(logement =>{
+        //                 if(match.params.id === logement.id.toString()){
+        //                         setLogement(logement);
+        //                 } 
+        //         }) 
+        // } , [match.params.id]);
+
+         
         useEffect(() => { 
-                LOGEMENTS.forEach(logement =>{
-                        if(match.params.id === logement.id.toString()){
-                                setLogement(logement);
-                        } 
-                }) 
+        LogementService.getLogementById(match.params.id).then(logement => setLogement(logement));
         } , [match.params.id]);
   
 

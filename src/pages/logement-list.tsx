@@ -4,6 +4,7 @@ import LogementCard from '../components/logement-card';
 import { LOGEMENTS } from '../models/mocks-logement';
 import Logement from '../models/logement';
 import Baniere from '../components/baniere';
+import LogementService from '../services/logement-service';
 
 
 const LogementList:FunctionComponent = () =>{
@@ -12,7 +13,8 @@ const LogementList:FunctionComponent = () =>{
 const [logementList , setLogementList] = useState<Logement[]>([]);
 
  useEffect(() => {
-        setLogementList(LOGEMENTS);
+       LogementService.getAllLogements().then(logement => setLogementList(logement));
+       // setLogementList(LOGEMENTS);
 },[]);
 
 
